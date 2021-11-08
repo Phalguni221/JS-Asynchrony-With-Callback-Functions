@@ -70,15 +70,9 @@ function newNonPlayableCharacter(x, y) {
     }
     
 
-    function stop(time, callback) {
+    function stop() {
         direction = null
         element.src = `./assets/red-character/static.gif`
-        setTimeout(() => {
-            stop()
-            if(callback){
-                callback()
-            }
-        }, time)
     }
     
 
